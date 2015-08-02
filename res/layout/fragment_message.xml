@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/message_fragment_id" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+			
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingBottom="@dimen/activity_vertical_margin"
+		    android:paddingLeft="@dimen/activity_horizontal_margin"
+		    android:paddingRight="@dimen/activity_horizontal_margin"
+		    android:paddingTop="@dimen/activity_vertical_margin" >
+	        <EditText
+			    android:id="@+id/numEditText"
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dip"
+			    android:layout_weight="1"
+			    android:layout_marginLeft="10dip"
+			    android:background="@drawable/bg_edittext"
+			    android:textSize="18sp"
+			    android:singleLine="true"
+			    android:hint="手机号码" />
+		
+			<Button
+			    android:id="@+id/sendMesButton"
+			    android:layout_width="80dip"
+			    android:layout_height="35dip"
+			    android:layout_marginLeft="10dip"
+			    android:layout_marginRight="10dip"
+			    android:background="@drawable/send_message_btn"
+			    android:ems="10"
+			    android:textSize="18sp"
+			    android:textColor="#FFFFFF"
+			    android:text="发送" />
+		</LinearLayout>
+		<EditText
+		    android:id="@+id/mesEditText"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_margin="26dip"
+		    android:background="@drawable/bg_edittext"
+		    android:ems="10"
+		    android:textSize="18sp"
+		    android:gravity="top"
+		    android:hint="短信内容" />
+		<LinearLayout
+		    android:id="@+id/messagelistlayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:orientation="vertical" >
+			<LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:orientation="horizontal" >
+		        <ListView
+				    android:id="@+id/have_send_messagelist"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:background="@drawable/bg_num_btn" />
+		        <ListView
+				    android:id="@+id/have_recieved_messagelist"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:background="@drawable/bg_num_btn" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        <Button
+		            android:id="@+id/have_send"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="已发送"/>
+		        <Button
+		            android:id="@+id/have_recieved"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="已收到"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout  
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"  
+		    android:gravity="center|center_horizontal|center_vertical"
+		    android:background="@drawable/bg_num_btn" > 
+		    <Button
+		        android:id="@+id/button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		</LinearLayout>
+		
+	</LinearLayout>    
+	    
+</RelativeLayout>
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/message_fragment_id" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:paddingBottom="@dimen/activity_vertical_margin"
+		    android:paddingLeft="@dimen/activity_horizontal_margin"
+		    android:paddingRight="@dimen/activity_horizontal_margin"
+		    android:paddingTop="@dimen/activity_vertical_margin"
+	        android:orientation="vertical" >
+			
+	        <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        <EditText
+				    android:id="@+id/numEditText"
+				    android:layout_width="fill_parent"
+				    android:layout_height="35dip"
+				    android:layout_weight="1"
+				    android:layout_marginLeft="10dip"
+				    android:background="@drawable/bg_edittext"
+				    
+				    android:textSize="18sp"
+				    android:singleLine="true"
+				    android:hint="手机号码" />
+			
+				<Button
+				    android:id="@+id/sendMesButton"
+				    android:layout_width="80dip"
+				    android:layout_height="35dip"
+				    android:layout_marginLeft="10dip"
+				    android:layout_marginRight="10dip"
+				    android:background="@drawable/send_message_btn"
+				    android:ems="10"
+				    android:textSize="18sp"
+				    android:textColor="#FFFFFF"
+				    android:text="发送" />
+			</LinearLayout>
+			<EditText
+			    android:id="@+id/mesEditText"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:layout_margin="10dip"
+			    android:background="@drawable/bg_edittext"
+			    android:ems="10"
+			    android:textSize="18sp"
+			    android:gravity="top"
+			    android:hint="短信内容" />
+		</LinearLayout>
+		<TextView
+		    android:id="@+id/messagelist"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:background="#eeeeee" />
+		<LinearLayout  
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"  
+		    android:gravity="center|center_horizontal|center_vertical"
+		    android:background="@drawable/bg_num_btn" > 
+		    <Button
+		        android:id="@+id/button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		</LinearLayout>
+		
+	</LinearLayout>
+    
+	    
+</RelativeLayout> -->
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/message_fragment_id" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:paddingBottom="@dimen/activity_vertical_margin"
+		    android:paddingLeft="@dimen/activity_horizontal_margin"
+		    android:paddingRight="@dimen/activity_horizontal_margin"
+		    android:paddingTop="@dimen/activity_vertical_margin"
+	        android:orientation="vertical" >
+			
+	        <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        <EditText
+				    android:id="@+id/numEditText"
+				    android:layout_width="fill_parent"
+				    android:layout_height="35dip"
+				    android:layout_weight="1"
+				    android:layout_marginLeft="10dip"
+				    android:background="@drawable/bg_edittext"
+				    
+				    android:textSize="18sp"
+				    android:singleLine="true"
+				    android:hint="手机号码" />
+			
+				<Button
+				    android:id="@+id/sendMesButton"
+				    android:layout_width="80dip"
+				    android:layout_height="35dip"
+				    android:layout_marginLeft="10dip"
+				    android:layout_marginRight="10dip"
+				    android:background="@drawable/send_message_btn"
+				    android:ems="10"
+				    android:textSize="18sp"
+				    android:textColor="#FFFFFF"
+				    android:text="发送" />
+			</LinearLayout>
+			<EditText
+			    android:id="@+id/mesEditText"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:layout_margin="10dip"
+			    android:background="@drawable/bg_edittext"
+			    android:ems="10"
+			    android:textSize="18sp"
+			    android:gravity="top"
+			    android:hint="短信内容" />
+		</LinearLayout>
+		<TextView
+		    android:id="@+id/mobiletext"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:background="#ee000e" />
+		<ListView
+		    android:id="@+id/messagelist"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1" />
+		
+		<LinearLayout  
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"  
+		    android:gravity="center|center_horizontal|center_vertical"
+		    android:background="@drawable/bg_num_btn" > 
+		    <Button
+		        android:id="@+id/button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		</LinearLayout>
+		
+	</LinearLayout>
+    
+	    
+</RelativeLayout> -->
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/message_fragment_id" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:paddingBottom="@dimen/activity_vertical_margin"
+		    android:paddingLeft="@dimen/activity_horizontal_margin"
+		    android:paddingRight="@dimen/activity_horizontal_margin"
+		    android:paddingTop="@dimen/activity_vertical_margin"
+	        android:orientation="vertical" >
+			
+	        <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        <EditText
+				    android:id="@+id/numEditText"
+				    android:layout_width="fill_parent"
+				    android:layout_height="35dip"
+				    android:layout_weight="1"
+				    android:layout_marginLeft="10dip"
+				    android:background="@drawable/bg_edittext"
+				    
+				    android:textSize="18sp"
+				    android:singleLine="true"
+				    android:hint="手机号码" />
+			
+				<Button
+				    android:id="@+id/sendMesButton"
+				    android:layout_width="80dip"
+				    android:layout_height="35dip"
+				    android:layout_marginLeft="10dip"
+				    android:layout_marginRight="10dip"
+				    android:background="@drawable/send_message_btn"
+				    android:ems="10"
+				    android:textSize="18sp"
+				    android:textColor="#FFFFFF"
+				    android:text="发送" />
+			</LinearLayout>
+			<EditText
+			    android:id="@+id/mesEditText"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:layout_margin="10dip"
+			    android:background="@drawable/bg_edittext"
+			    android:ems="10"
+			    android:textSize="18sp"
+			    android:gravity="top"
+			    android:hint="短信内容" />
+		</LinearLayout>
+		<TextView
+		    android:id="@+id/messagelist"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:background="#eeeeee" />
+		<LinearLayout  
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"  
+		    android:gravity="center|center_horizontal|center_vertical"
+		    android:background="@drawable/bg_num_btn" > 
+		    <Button
+		        android:id="@+id/button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		</LinearLayout>
+		
+	</LinearLayout>
+    
+	    
+</RelativeLayout> -->

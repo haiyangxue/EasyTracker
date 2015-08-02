@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">易寻</string>
+    <string name="logout">登出</string>
+    <string name="about">关于</string>
+    <string name="switch_theme">切换主题</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">action 示例</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

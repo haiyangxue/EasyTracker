@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     
+    <LinearLayout
+        android:id="@+id/ll_node"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#ffffff" >
+        
+        <LinearLayout
+            android:id="@+id/ll_start_node"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+	            android:id="@+id/start"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:textSize="20dip"
+	                android:text="起点" />
+	            <EditText
+	                android:id="@+id/start_place"
+	                android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:gravity="center"
+		            android:text="高新区舜华路1500"
+		            android:textSize="18dip"
+		            android:singleLine="true"
+		            android:hint="输入起点纬度"
+		            android:background="@drawable/bg_navigation_place_edit" />
+			</LinearLayout>
+			<LinearLayout
+	            android:id="@+id/mid"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:orientation="vertical"
+	            android:layout_gravity="center|center_horizontal|center_vertical" >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:textSize="20dip"
+	                android:text="  " />
+	            <ImageButton
+				    android:id="@+id/exchange_place_btn"
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:background="@drawable/bg_exchange_place_btn" />
+			</LinearLayout>
+			<LinearLayout
+	            android:id="@+id/end"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:textSize="20dip"
+	                android:text="终点" />
+	            <EditText
+	                android:id="@+id/end_place"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:gravity="center"
+		            android:text="丁豪广场"
+		            android:textSize="18dip"
+		            android:singleLine="true"
+		            android:hint="输入起点经度"
+		            android:background="@drawable/bg_navigation_place_edit" />
+			</LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+	        android:id="@+id/mapview_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:background="#000000" >
+	    </FrameLayout>
+        <LinearLayout
+            android:id="@+id/ll_calc_btn"
+	        android:layout_below="@id/ll_node"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+			<Button
+			    android:id="@+id/online_calc_btn"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textSize="20dip"
+				android:text="在线规划"
+				android:textColor="#787878"
+				android:background="@drawable/bg_navigation_btns" />
+			<Button
+			    android:id="@+id/simulate_navigation_btn"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textSize="20dip"
+				android:text="模拟导航"
+				android:textColor="#787878"
+				android:background="@drawable/bg_navigation_btns" />
+			<Button
+			    android:id="@+id/real_navigation_btn"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:textSize="20dip"
+			    android:text="真实导航"
+			    android:textColor="#787878"
+			    android:background="@drawable/bg_navigation_btns" />
+	    </LinearLayout>
+
+    </LinearLayout>
+    
+</RelativeLayout>

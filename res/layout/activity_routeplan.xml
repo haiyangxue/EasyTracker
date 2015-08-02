@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     
+    <LinearLayout android:id="@+id/ll_node"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ll_calc_btn"
+        android:layout_below="@id/ll_node"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:padding="8dip"
+        android:orientation="horizontal">
+	     
+	    
+    </LinearLayout>
+
+	    <FrameLayout
+	        android:id="@+id/mapview_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/ll_calc_btn" >
+
+    </FrameLayout>
+     <Button
+        android:id="@+id/real_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dip" 
+        android:textSize="14sp"
+	    android:text="大三"/>
+</RelativeLayout>

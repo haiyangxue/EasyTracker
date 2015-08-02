@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        android:background="#fbfbfb"
+	        android:padding="7dip" >
+	        
+	        <TextView
+		        android:id="@+id/MessageItemAdress"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:textSize="15dip" />
+		    <TextView
+		        android:id="@+id/MessageItemPerson"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:textSize="15dip" />
+	        <TextView 
+		        android:id="@+id/MessageItemDate"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:textSize="15dip" />
+		    <ImageView
+		        android:id="@+id/ItemImage" 
+		        android:layout_alignParentRight="true"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+
+		</LinearLayout>
+        <TextView 
+	        android:id="@+id/MessageItemBody"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="15dip"
+	        android:padding="10dip" />
+	</LinearLayout>
+    
+</RelativeLayout>

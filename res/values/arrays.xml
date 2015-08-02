@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_title">
+        <item>首页</item>
+        <item>电话</item>
+        <item>短信</item>
+        <item>导航</item>
+        <item>追踪</item>
+        <item>拍照</item>
+        <item>设置</item>
+    </string-array>
+    
+    <integer-array name="item_icon_res">
+        <item>@drawable/ic_drawer_home</item>
+        <item>@drawable/ic_drawer_phone</item>
+        <item>@drawable/ic_drawer_message</item>
+        <item>@drawable/ic_drawer_navigation</item>
+        <item>@drawable/ic_drawer_tracker</item>
+        <item>@drawable/ic_drawer_photo</item>
+        <item>@drawable/ic_drawer_setting</item>
+    </integer-array>
+</resources>

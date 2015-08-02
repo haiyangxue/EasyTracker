@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <EditText
+	        android:id="@+id/mobile"
+	        android:layout_width="fill_parent"
+	        android:layout_height="60dip"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/bg_dial_num_edittext"
+	        android:textSize="50dip" />
+        <TextView
+            android:id="@+id/contacts_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_num_btn">
+        </TextView>
+        <LinearLayout
+            android:id="@+id/dialBoard"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        <Button
+			        android:id="@+id/button1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="1" />
+			    <Button
+			        android:id="@+id/button2"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="2" />
+			    <Button
+			        android:id="@+id/button3"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="3" />
+		    </LinearLayout>
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        <Button
+			        android:id="@+id/button4"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="4" />
+			    <Button
+			        android:id="@+id/button5"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="5" />
+			    <Button
+			        android:id="@+id/button6"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="6" />
+		    </LinearLayout>
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        <Button
+			        android:id="@+id/button7"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="7" />
+			    <Button
+			        android:id="@+id/button8"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="8" />
+			    <Button
+			        android:id="@+id/button9"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="9" />
+		    </LinearLayout>
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        <Button
+			        android:id="@+id/button10"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="*" />
+			    <Button
+			        android:id="@+id/button0"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="0" />
+			    <Button
+			        android:id="@+id/button11"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/bg_num_btn"
+
+			        android:textSize="25dip"
+			        android:text="#" />
+		    </LinearLayout>
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center|center_horizontal|center_vertical"
+		        android:orientation="horizontal"
+		        android:background="@drawable/bg_num_btn" >
+			    <ImageButton
+			        android:id="@+id/clear_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="45px"
+			        android:background="@drawable/bg_reset_btn" />
+		        <ImageButton
+			        android:id="@+id/dial_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/bg_dial_btn" />
+			    <ImageButton
+			        android:id="@+id/delete_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="45px"
+			        android:background="@drawable/bg_delete_btn" />
+		    </LinearLayout>
+		</LinearLayout>
+		<LinearLayout  
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"  
+		    android:gravity="center|center_horizontal|center_vertical" > 
+		    <Button
+		        android:id="@+id/button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		</LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

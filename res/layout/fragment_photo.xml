@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/photo_fragment_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center|center_horizontal|center_vertical"
+		android:orientation="vertical" >
+		
+		<com.pratra.easyshare.ui.horizontallistview.HorizontalListView
+		    android:id="@+id/horizon_listview"
+		    android:layout_width="match_parent"
+		    android:layout_height="114dp"
+		    android:layout_alignParentTop="true" >
+		</com.pratra.easyshare.ui.horizontallistview.HorizontalListView>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center|center_horizontal|center_vertical"
+			android:orientation="vertical"
+			android:background="@drawable/bg_division_line" >
+			<ImageView
+			    android:id="@+id/image_preview"
+			    android:layout_width="294dp"
+			    android:layout_height="220dp"
+			    android:src="@drawable/img_bg"
+			    android:background="@drawable/bg_border_photo_imageview"
+			    android:clickable="true"
+			    android:padding="3dp"
+			    android:scaleType="fitCenter" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center|center_horizontal|center_vertical"
+			android:orientation="vertical" >
+			<ImageButton
+			    android:id="@+id/capture_photo"
+			    android:layout_width="142dp"
+			    android:layout_height="60dp"
+			    android:layout_marginTop="20dip"
+			    android:layout_marginBottom="20dip"
+			    android:background="@drawable/ic_drawer_capture"
+			    android:scaleType="fitCenter" />
+		</LinearLayout>
+        
+	</LinearLayout>
+    <!-- android:layout_below="@id/horizon_listview"
+		    android:layout_centerInParent="true"
+		    android:layout_below="@id/image_preview"
+		    android:layout_centerInParent="true" -->
+
+
+</RelativeLayout>
